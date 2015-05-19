@@ -1,0 +1,42 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        
+      	height: 150px;
+      	width: 200px;
+      }
+      
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+
+  </head>
+  <body>
+  <p id="demo"></p>
+    <input id="text" type="text" style="width:80%" /><br />
+	
+<input type="button" value="Create Short" onclick="makeShort();" /> <br/> <br/>
+
+  </body>
+  <script src="popup.js"></script>
+ 	<script type="text/javascript" src="gapi.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="qrcode.js"></script>
+	<script type="text/javascript" src="qrcode.min.js"></script>
+	
+	<script src="popup.js"></script>
+</html>
+
